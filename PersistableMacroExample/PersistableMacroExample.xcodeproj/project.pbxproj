@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD60A86F2D90055700C4BECB /* Persistable in Frameworks */ = {isa = PBXBuildFile; productRef = BD60A86E2D90055700C4BECB /* Persistable */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD49F8FC2D8FF0BB004CBFDA /* PersistableMacroExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistableMacroExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD60A86F2D90055700C4BECB /* Persistable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = PersistableMacroExample;
 			packageProductDependencies = (
+				BD60A86E2D90055700C4BECB /* Persistable */,
 			);
 			productName = PersistableMacroExample;
 			productReference = BD49F8FC2D8FF0BB004CBFDA /* PersistableMacroExample.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = BD49F8F32D8FF0BB004CBFDA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BD60A86D2D90055700C4BECB /* XCRemoteSwiftPackageReference "Persistable" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BD49F8FD2D8FF0BB004CBFDA /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD60A86D2D90055700C4BECB /* XCRemoteSwiftPackageReference "Persistable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MaToSens/Persistable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD60A86E2D90055700C4BECB /* Persistable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD60A86D2D90055700C4BECB /* XCRemoteSwiftPackageReference "Persistable" */;
+			productName = Persistable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BD49F8F42D8FF0BB004CBFDA /* Project object */;
 }
