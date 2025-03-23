@@ -11,7 +11,9 @@ import SwiftUI
 struct PersistableMacroExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                TodoListView()
+            }
         }
     }
 }
